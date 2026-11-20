@@ -1014,10 +1014,11 @@
       <div class="order-grid">
         <form class="form-card" action="https://formsubmit.co/48cd48e8337cedf5a1d0e8bca1ec55a0" method="POST">
           <input type="hidden" name="_subject" value="New Order — Valley Made Media" />
-          <input type="hidden" name="_next" value="https://valleymedia12.github.io/" />
+          <input type="hidden" name="_next" value="https://valleymedia12.github.io/thanks.html" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_autoresponse" value="Thanks — your order is in. Here&rsquo;s the path: (1) we confirm the details and send your deposit link (50% — orders under $150 are paid in full), (2) we build your watermarked proof for your approval, (3) you pay the balance and your clean files land. If you have photos, a logo file, or video clips for this job, just reply to this email with them attached. Talk soon — Valley Made Media" />
+          <input type="hidden" name="_replyto" id="f-replyto" value="" />
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 
           <div class="form-grid two">
@@ -1034,7 +1035,7 @@
           <div class="form-grid two" style="margin-top:16px">
             <div>
               <label for="f-email">Email <span>*</span></label>
-              <input id="f-email" name="Email" type="email" required placeholder="you@yourbusiness.com" autocomplete="email" />
+              <input id="f-email" name="email" type="email" required placeholder="you@yourbusiness.com" autocomplete="email" />
             </div>
             <div>
               <label for="f-phone">Phone <small>(optional)</small></label>
@@ -1213,6 +1214,13 @@
 
   updateEstimate();
 })();
+</script>
+<script>
+document.querySelector('.form-card').addEventListener('submit', function () {
+  var e = document.getElementById('f-email');
+  var r = document.getElementById('f-replyto');
+  if (e && r) { r.value = e.value; }
+});
 </script>
 </body>
 </html>
