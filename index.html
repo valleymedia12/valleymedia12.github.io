@@ -452,7 +452,7 @@
   <div class="strip" aria-hidden="true">
     <div class="wrap strip-inner" style="padding:0">
       <div class="strip-item"><strong>$25 – $449</strong><span>Clear range, no surprises</span></div>
-      <div class="strip-item"><strong>50% to start</strong><span>Balance on delivery</span></div>
+      <div class="strip-item"><strong>50% to start</strong><span>Balance after proof approval</span></div>
       <div class="strip-item"><strong>48–72 hours</strong><span>Standard turnaround</span></div>
       <div class="strip-item"><strong>Rush available</strong><span>24-hour +50%</span></div>
     </div>
@@ -718,7 +718,7 @@
           <span class="label">Video</span>
           <h4>30-Second Promo</h4>
           <p>Fast, clean promo for one offer, special, or announcement.</p>
-          <div class="includes"><strong>What's included</strong>Licensed music, captions, and script help from your notes — built from your footage/photos. Delivered in vertical 9:16 + widescreen, ready for Reels, TikTok &amp; YouTube.</div>
+          <div class="includes"><strong>What's included</strong>Licensed music, captions, voiceover, and script help from your notes — built from your footage/photos. Delivered in vertical 9:16 + widescreen, ready for Reels, TikTok &amp; YouTube.</div>
           <div class="price-row"><span class="price-big">$149</span><span class="price-alt">Best for<strong>One big offer</strong></span></div>
           <span class="order-link">Order this →</span>
         </button>
@@ -726,7 +726,7 @@
           <span class="label">Video • Recommended</span>
           <h4>45–60 Second Promo</h4>
           <p>Full story — your food, shop, services, and call to action in one complete promo.</p>
-          <div class="includes"><strong>What's included</strong>Everything in the 30-sec — licensed music, captions, script help from your notes — plus more scenes. Delivered in vertical 9:16 + widescreen — 2 formats total.</div>
+          <div class="includes"><strong>What's included</strong>Everything in the 30-sec — licensed music, captions, voiceover, script help from your notes — plus more scenes. Delivered in vertical 9:16 + widescreen — 2 formats total.</div>
           <div class="price-row"><span class="price-big">$249</span><span class="price-alt">Best for<strong>Main promo</strong></span></div>
           <span class="order-link">Order this →</span>
         </button>
@@ -779,7 +779,7 @@
           <span class="label">Design • Logo</span>
           <h4>Logo — Starter</h4>
           <p>A clean logo to get you launched. PNG + JPG files included.</p>
-          <div class="includes"><strong>What's included</strong>1 concept, 2 revision rounds, PNG + JPG.</div>
+          <div class="includes"><strong>What's included</strong>2 concepts, 2 revision rounds, PNG + JPG.</div>
           <div class="price-row"><span class="price-big">$149</span><span class="price-alt">Good for<strong>New businesses</strong></span></div>
           <span class="order-link">Order this →</span>
         </button>
@@ -828,7 +828,7 @@
         <button type="button" class="service-card monthly-card" data-service="Monthly — Design Essentials $249/mo" data-price="249">
           <span class="label">Monthly — Design Essentials</span>
           <h4>Design Essentials — $249/mo</h4>
-          <p>8 design pieces + 2 short videos or reel edits every month. Your page stays active without you touching it.</p>
+          <p>8 design pieces + 2 short videos or reel edits every month. Fresh content in your inbox every month — we make it, you post it.</p>
           <div class="includes"><strong>What's included</strong>8 design pieces + 2 short videos / reel edits per month • 2 content batches per month • 2 revision rounds per piece. Design &amp; editing only.</div>
           <div class="price-row"><span class="price-big">$249<span style="font-size:16px;color:var(--muted);font-weight:700">/mo</span></span><span class="price-alt">Includes<strong>10 pieces / month</strong></span></div>
           <span class="order-link">Start monthly →</span>
@@ -874,9 +874,9 @@
           <h3>What each job includes</h3>
           <div class="policies-grid">
             <div>Promo videos are built from your photos and video clips — send what you have; your own footage makes it yours. Every promo includes script, voiceover, music, and captions.</div>
-            <div><strong>30-sec ($149):</strong> one vertical or horizontal cut.</div>
-            <div><strong>45–60-sec ($249):</strong> one cut, your choice of orientation.</div>
-            <div><strong>Premium ($349):</strong> 60-sec + vertical + square cuts.</div>
+            <div><strong>30-sec ($149):</strong> vertical 9:16 + widescreen cuts.</div>
+            <div><strong>45–60-sec ($249):</strong> vertical 9:16 + widescreen cuts — 2 formats.</div>
+            <div><strong>Premium ($349):</strong> 60-sec + vertical + square cuts.</div><div><strong>Turnaround:</strong> 48–72 hours is to your watermarked proof. Final files follow your approval — the clock pauses while we&rsquo;re waiting on your feedback or materials.</div>
             <div><strong>Reel edit ($49):</strong> we edit footage you shot into one ready-to-post reel.</div>
             <div><strong>On-site filming:</strong> local (Wyoming Valley) shoots are available and quoted per job before you commit — never a surprise charge.</div>
             <div><strong>Menus:</strong> priced for a standard single menu (front, or front + back as a double-sided design). Very large menus are quoted before work starts.</div>
@@ -942,7 +942,7 @@
             <div>Rush 24-hour delivery +50%</div>
             <div>2 revision rounds included; extra rounds $25</div>
             <div>You supply your text &amp; photos — we design, we don’t invent your info</div>
-            <div>Balance due on delivery of final files</div>
+            <div>Balance due after you approve the proof — clean files are released on payment</div>
             <div>The 48–72 hour clock starts when your deposit and all your materials are in — incomplete materials pause the clock.</div>
             <div>You approve a proof first; final clean files are released when the balance is paid.</div>
             <div>Turnaround: 48 hours for designs (flyers, menus, logos, posts), 72 hours for promo videos — counted from when your deposit and your materials (photos, prices, text) are both in. Need it in 24 hours? Rush is +50%, confirmed before the clock starts.</div>
@@ -1178,11 +1178,11 @@
       estNote.textContent = "Monthly plans are billed month to month. First month starts your plan — no long contract.";
     } else if(price < 150){
       estDeposit.textContent = money(price) + " in full";
-      estNote.textContent = "Orders under $150 are paid in full to start. Balance: $0 on delivery.";
+      estNote.textContent = "Orders under $150 are paid in full to start. Balance: $0.";
     } else {
       var dep = Math.round(price/2);
       estDeposit.textContent = money(dep) + " deposit";
-      estNote.textContent = "50% to start, " + money(price-dep) + " due on delivery of final files.";
+      estNote.textContent = "50% to start, " + money(price-dep) + " due after you approve the proof.";
     }
   }
 
