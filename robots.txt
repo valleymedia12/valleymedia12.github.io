@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://valleymedia12.github.io/sitemap.xml
